@@ -1,0 +1,94 @@
+/* Menambahkan warna latar belakang biru muda pada header */
+.card-header {
+    background-color: #ADD8E6;
+    color: white;
+    font-weight: bold;
+}
+
+/* Menambahkan border biru muda pada form dan card */
+.card {
+    border: 1px solid #ADD8E6;
+}
+
+/* Gaya tombol dengan aksen biru muda */
+.btn-primary {
+    background-color: #ADD8E6;
+    border-color: #ADD8E6;
+}
+
+.btn-primary:hover {
+    background-color: #7EC8E6;
+    border-color: #7EC8E6;
+}
+
+/* Memberikan aksen biru muda pada input form */
+input.form-control, textarea.form-control {
+    border: 1px solid #ADD8E6;
+    transition: border 0.3s ease;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #7EC8E6;
+}
+
+/* Menambahkan aksen biru muda pada switch checkbox */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Ketika input checkbox dicentang */
+.switch input:checked + .slider {
+    background-color: #ADD8E6;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Menambahkan warna biru muda untuk footer */
+footer {
+    background-color: #ADD8E6;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Agar teks error muncul dengan baik */
+.text-danger {
+    font-size: 12px;
+    font-style: italic;
+}
